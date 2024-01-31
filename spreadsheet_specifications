@@ -1,0 +1,43 @@
+# Spreadsheet Specifications
+
+Here I will outline the format this script expects for imported CSV data from the Google Sheets.
+
+
+
+
+## Etymology (LexiliAsel)
+
+Break apart the LexiliAsel field around any period. Process each part seperately:
+
+* If blank, then none.
+* If it starts with https:// or http://, then URL
+* If it contains `(` then it's a `NATLANG`
+* Else, it's `DERIVED`
+
+# Source Natlang
+
+Acceptible format:
+
+```
+kwasilexi - natlang1 (comments), natlang2 (comments)
+
+natlang1, natlang2 (comment), natlang3
+
+natlang1, natlang2, natlang3
+```
+
+* `kwasilexi - ` is an optional start that indicates it's an onomatopoeic word.
+* Brackets around a comment are optional.
+* natlangs are listed, seperated by commas.
+
+# Derived Etymology
+
+Break apart etymology by spaces. For each 'word'
+
+* If it's a `+` start a new phrase.
+* If it's a `,` start a new phrase.
+* If it's a `.` start a new phrase.
+* If it's an `oko` and followed an `am` then add it to final string
+* If it's a priori_ and followed an '_a` then add it tot he final string
+* Otherwise, Add the current word to phrase
+* unless it's a new phrase, in which case add the phrase so far to the final result and start a new blank phrase.
