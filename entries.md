@@ -11,7 +11,7 @@ All entries except phrases should list rhymes. All rhyme words should be listed 
 
 Our working minimum algorithm for a rhyme is:
 
-- The last two letters must be the same, but if the last two letters are consonants then it must be at least the last three letters.
+> The last two letters must be the same, but if the last two letters are consonants then it must be at least the last three letters.
 
 But while listing rhymes of a term, there are several rules of when not to list the term. They are:
 
