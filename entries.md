@@ -42,6 +42,7 @@ But while listing rhymes of a entry, there are several rules of when not to list
    
     1. If this entry is a root/proper word, don't list derived terms that use this entry as the last morpheme. (Eg. `kom` should not list `nonkom`.)
     2. If this entry is a derived word, don't list a derived terms that uses this entry's last morpheme as the rhyming term's last morpheme. (It doesn't matter if the two final morphemes rhyme.) (Eg. `Kanadayen` shouldn't list any other nationality ending with `-yen`.)
+    3. Should not list itself.
      
 3. Don't show terms that are the root/affix form of this entry.
 
@@ -58,9 +59,11 @@ Entries to run tests on to make sure this is working properly:
 - `kom` should not list terms ending with `kom' (2i. Eg. `nenkom`)
 - `kom' should not list phrases, eg. `alo kom` (1i.)
 - `Kanadayen` should not list other nationalities (2ii. Ending with -yen)
+- `aselli` will not include derived words with `-li` (2ii)
 - 1ii: ?
 - 3i: ?
 - 3ii: ?
 - 3iii: ?
 
-
+- Check -bimar, bimar, sadly, not words end with `bimar` to test this with.
+- The entry word lilbarix will not include derived words with barix. 
