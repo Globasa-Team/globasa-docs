@@ -1,27 +1,65 @@
 # Entry Structure
 
 
-# Etymology
+
+## Word Class
+Valid word classes are:
+
+- root
+- proper word
+- derived
+- phrase
+- affix
+
+## Etymology
 
 
 
-# Rhymes
+## Rhymes
 
-All entries except phrases should list rhymes. All rhyme words should be listed together (not strong first, then weak, etc).
+All entries except phrases should list rhymes. All rhyme words should be in a single list, alphabetically sorted. (Not segmented by strong rhymes, weak rhymes, etc. By popularity would be neat, but we don't have the data to do that even if we wanted to.)
+
+> [!NOTE]
+> In this section:
+>
+> - root will mean root or proper word term
+> - derived will mean derived or phrase term
+> - last morphme means the final term in a derived terms etymology or the root term itself for a root
+> - root/affix alt form is for terms like `kal` and `-kal` which are alternative forms of eachother.
 
 Our working minimum algorithm for a rhyme is:
 
 > The last two letters must be the same, but if the last two letters are consonants then it must be at least the last three letters.
 
-But while listing rhymes of a term, there are several rules of when not to list the term. They are:
+But while listing rhymes of a entry, there are several rules of when not to list a rhyming term. They are:
 
-1. Don't show phrases that rhyme with this term
-2. Don't show affixes that rhyme with this term
-3. Don't show derived words that share the same last morpheme as this derived term.
-4. Don't show derived words that use the current term as the last morpheme
-5. Don't show root words that use an affix version of the current term as the last morpheme (eg. kal shouldn't show words ending with + -kal)
-6. Special case: when showing rhymes for an affix, make sure the words shown aren't the root form of the current term. (Eg. -kal shouldn't show words with +kal)
+1. Don't list non-word terms (non-roots).
 
-Use the heading Rhyming Words not Ending in %1$s and list either the final morpheme of this term if derived or phrase, or this term if a root.
+    1. Don't list rhyming phrases that rhyme with this entry. (Eg. `kom` should not list `alo kom`.)
+    2. Don't list rhyming affixes that rhyme with this entry. (Eg. `sen` should not list `-yen`.)
+       
+2. Don't show derived words that share the same last morpheme as this entry.
+   
+    1. If this entry is a root/proper word, don't list derived terms that use this entry as the last morpheme. (Eg. `kom` should not list `nonkom`.)
+    2. If this entry is a derived word, don't list a derived terms that uses this entry's last morpheme as the rhyming term's last morpheme. (It doesn't matter if the two final morphemes rhyme.) (Eg. `Kanadayen` shouldn't list any other nationality ending with `-yen`.)
+     
+3. Don't show terms that are the root/affix form of this entry.
 
-Root words and proper words have no derived etymology. Derived words and phrases do. Affixes are treated different from either, as with the above rules.
+    1. If this entry is a root/proper word, don't list rhyming derived terms where the final morphmeme is the affix form of this entry. (Eg. `kal` shouldn't show words ending with + `-kal`.)
+    2. If this entry is derived and the last morpheme is an affix, don't list rhyming terms where last morpheme is the root form if this entry. (Eg. Entries ending with `-kal` shouldn't show terms with the last morpheme `kal`)
+    3. Conversely, if this entry is derived and the last morpheme is a root/proper word, don't list rhyming terms where last morpheme is the affix form if this entry. (Eg. Entries ending with `kal` shouldn't show terms with the last morpheme `-kal`)
+
+Use the heading `Rhyming Words not Ending in %1$s` and list the final morpheme of this term, and the root/affix alt version, if there is one.
+
+
+
+Entries to run tests on to make sure this is working properly:
+- `kom` should not list terms ending with `kom' (2i. Eg. `nenkom`)
+- `kom' should not list phrases, eg. `alo kom` (1i.)
+- `Kanadayen` should not list other nationalities (2ii. Ending with -yen)
+- 1ii: ?
+- 3i: ?
+- 3ii: ?
+- 3iii: ?
+
+
