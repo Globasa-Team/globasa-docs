@@ -2,8 +2,21 @@
 
 Here I will outline the format this script expects for imported CSV data from the Google Sheets.
 
+## Word column
+The Word column is the term for this entry.
+- TODO: Rename `Word` column to `term`
+- TODO: Linter: check that only `WORD_CHARS_REGEX` `'/[^A-Za-z0-9 \-]/'` are present (term parser global constants)
 
+## Entry Note
 
+Entry notes are to be sperated by a period. (Maybe a pipe `|` if ntoes need periods.) Each note needs a keyword phrase followed by a colon. The data contained in the note depends on the colon.
+
+- Am oko: [Globasa term]
+- Kurto lexi cel: [Globasa term]
+- Am kompara fe: [Globasa term]
+- Am oko tabellexi [link to Correlatives in respective natlang]
+- Yongudo sol ton: [Globasa term]
+- Nota: free form markdown
 
 ## Etymology (LexiliAsel)
 
