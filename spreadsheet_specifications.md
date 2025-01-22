@@ -7,6 +7,22 @@ The Word column is the term for this entry.
 - TODO: Rename `Word` column to `term`
 - TODO: Linter: check that only `WORD_CHARS_REGEX` `'/[^A-Za-z0-9 \-]/'` are present (term parser global constants)
 
+## Part of Speech
+What [part of speech](https://en.wikipedia.org/wiki/Part_of_speech). Parts of speech include nouns, verbs etc.
+
+## Term Category
+
+The linguistic category of a term, such as it's [morpheme](https://en.wikipedia.org/wiki/Morphology_(linguistics)) classification or [phrase]().
+
+Categories might be
+- Affix
+- Phrase
+- Root / word stem
+
+
+
+
+
 ## Entry Note
 
 Entry notes are to be sperated by a period. (Maybe a pipe `|` if ntoes need periods.) Each note needs a keyword phrase followed by a colon. The data contained in the note depends on the colon.
