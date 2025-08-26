@@ -17,9 +17,7 @@ The Globasa word list backend downloads the Globassa word list spreadsheet, pars
 ### End user files
 These files are the unprocessed, raw spreadsheets from the Globasa word list editors.
   * https://cdn.globasa.net/api2/word-list.csv
-  * https://cdn.globasa.net/api2/word-list.ods
-  * https://cdn.globasa.net/api2/word-list.tsv
-  * https://cdn.globasa.net/api2/word-list.xlsx
+  * https://cdn.globasa.net/api2/word-list.tsv  
 
 ### Standard Translations File
 
