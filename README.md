@@ -5,11 +5,18 @@ This is the location for technical documents regarding the Globasa input spreads
 > [!NOTE]
 > Globasa Team projects use 3-letter language codes when referencing natlang languages.
 
-* [api](api.md)
-* [api2-standard](api2-standard.md)
+User documentation
+
+* [User: dict-localization](user-dict-localization.md)
+* [User:_world_list_editor](user_world_list_editor.md)
+
+[API Documentation](api.md)
+
+* [API2: standard translation file](api2-standard.md)
+
+API/Dictionary Developer Documentation
+
 * [dev-entries](dev-entries.md)
-* [user-dict-localization](user-dict-localization.md)
-* [user_world_list_editor](user_world_list_editor.md)
 
 ## Participate
 
