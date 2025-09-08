@@ -1,0 +1,7 @@
+Being a word list editor means you are able to make edits to the Globasa lexicon and their translations. That data is kept in a spreadsheet on Google Docs.
+
+Periodically, this spreadsheet is downloaded and run thru and import script to update the [online dictionary app](https://menalari.globasa.net/eng/).
+
+The word list spreadsheet is located at [https://docs.google.com/spreadsheets/d/1z_atqWgsTVz23uNqVqdYq8LKSBPnW3-sknbftGnzpdc/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1z_atqWgsTVz23uNqVqdYq8LKSBPnW3-sknbftGnzpdc/edit?usp=sharing)
+
+**Important**: You must not change the column headers (row 1) or the import script will not know what the column contains.
