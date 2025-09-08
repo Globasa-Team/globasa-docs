@@ -2,17 +2,6 @@
 
 There are multiple documents that need to be edited. You can edit them in many ways. I'm going to focus on Prose.io, but you can test alternatives.
 
-Online editors
-
-* https://github.com/
-* https://www.noteshub.app/notebooks
-* https://vscode.dev/
-* https://pandao.github.io/editor.md/en.html
-
-Desktop
-
-You can use the GitHub desktop client to sync files to your computer, edit them directly, and then upload them. Or so I'm told. You will want a markdown editor installed on your computer, ideally.
-
 ## Getting Started
 
 ### Step 1: Make a GitHub Account
@@ -51,6 +40,17 @@ You will now be in the Prose, and can edit files in each file repository (repo).
 * [https://prose.io/#Globasa-Team/globasa-docs](https://prose.io/#Globasa-Team/globasa-docs)
 * [https://prose.io/#Globasa-Team/data-example-sentences](https://prose.io/#Globasa-Team/data-example-sentences)
 
+## Alterantives
 
+There are other ways to edit these documents.
 
+Online editors
 
+* https://github.com/
+* https://www.noteshub.app/notebooks
+* https://vscode.dev/
+* https://pandao.github.io/editor.md/en.html
+
+Desktop
+
+You can use the GitHub desktop client to sync files to your computer, edit them directly, and then upload them. Or so I'm told. You will want a markdown editor installed on your computer, ideally.
