@@ -16,6 +16,8 @@ Quick links: [Main site admin](https://www.globasa.net/admin), [Doxo admin](http
 
 <a href="https://info.flagcounter.com/AWBh"><img src="https://s11.flagcounter.com/map/AWBh/size_s/txt_000000/border_CCCCCC/pageviews_0/viewers_3/flags_0/" alt="Flag Counter" border="0"></a>
 
+Soon, these will be changed to using GitHub. (At which point the above links won't work.)
+
 There are several ways contributors can contribute:
 
 * Editing the Globasa.net websites (main, Doxo and Xwexi)
