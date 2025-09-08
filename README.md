@@ -7,6 +7,7 @@ This is the location for technical documents regarding the Globasa input spreads
 
 User documentation
 * [user_document_editors](user_document_editors.md)
+* [user_document_editor_guide_grav.md](user_document_editor_guide_grav.md)
 * [User: dict-localization](user-dict-localization.md)
 * [User:_world_list_editor](user_world_list_editor.md)
 
